@@ -1,7 +1,7 @@
 {
-    "name": "gokhanakkurt/cat-savior",
-    "description": "Cat savior api",
-    "keywords": ["cat-savior", "api", "webservice"],
+    "name": "gokhanakkurt/pet-savior",
+    "description": "Pet Savior API",
+    "keywords": ["pet", "savior", "api", "webservice"],
     "license": "MIT",
     "type": "project",
     "authors":[

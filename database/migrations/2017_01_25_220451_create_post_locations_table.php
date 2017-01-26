@@ -19,7 +19,7 @@ class CreatePostLocationsTable extends Migration
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
             $table->decimal('latitude', 10,7)->index();
             $table->decimal('longitude',10,7)->index();
-            $table->string('title')->nullable();
+            $table->string('name')->nullable();
             $table->timestamps();
         });
     }

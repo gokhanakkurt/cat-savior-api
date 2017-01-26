@@ -17,7 +17,7 @@ class PostsController extends ApiController
      * @param  Request  $request
      * @return Response
      */
-    public function list(Request $request){
+    public function get(Request $request){
       $input = $request->only('page', 'limit');
       $posts = Post::with('location')->paginate($input['limit']);
       return $this->responseSuccess($posts);
@@ -60,7 +60,7 @@ class PostsController extends ApiController
      */
     public function store(Request $request)
     {
-        $input = $request->only('title', 'description', 'latitude', 'longitude', 'title');
+        $input = $request->only('title', 'description', 'latitude', 'longitude', 'location_name');
         // post data array
         $data = [
             'title' => $input['title'],
@@ -81,7 +81,7 @@ class PostsController extends ApiController
               'post_id'   => $post->id,
               'longitude' => $input['longitude'],
               'latitude'  => $input['latitude'],
-              'title'     => $input['title']
+              'name'     => $input['location_name']
         ]);
 
         return $this->responseSuccess($post);

@@ -15,7 +15,7 @@ class PostsSeeder extends Seeder
     {
       $faker = Faker\Factory::create();
 
-      for($i = 1; $i <= 50; $i++){
+      for($i = 1; $i <= 1000; $i++){
         Post::create([
             'title' => $faker->text,
             'description' => $faker->text,
@@ -26,7 +26,7 @@ class PostsSeeder extends Seeder
             'post_id' => $i,
             'longitude' => $faker->longitude,
             'latitude' => $faker->latitude,
-            'title' => $faker->text
+            'name' => $faker->text
         ]);
       }
     }

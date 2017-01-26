@@ -11,7 +11,7 @@
 |
 */
 
-$app->get('posts', 'PostsController@list');
+$app->get('posts', 'PostsController@get');
 $app->post('posts', 'PostsController@store');
-$app->get('posts/{id}', 'PostsController@show');
 $app->get('posts/nearby', 'PostsController@listNearby');
+$app->get('posts/{id}', 'PostsController@show');
