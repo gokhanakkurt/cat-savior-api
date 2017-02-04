@@ -78,9 +78,9 @@
   }
   ```
 
-  ##Nearby Posts
+##Nearby Posts
 
-    Returns list of posts.
+  Returns list of posts.
 
   **URL :**  /posts
 
@@ -88,9 +88,9 @@
     
   **Parameters**
 
-    **Required :** `latitude=[decimal]` (latitude of current location)
-    **Required :** `longitude=[decimal]` (longitude of current location)
-    **Optional :** `range=[integer]` (range in km)
+  **Required :** `latitude=[decimal]` (latitude of current location)
+  **Required :** `longitude=[decimal]` (longitude of current location)
+  **Optional :** `range=[integer]` (range in km)
 
   **Sample Response:**
 
