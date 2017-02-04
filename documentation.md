@@ -1,5 +1,5 @@
 ##Create a post
-----
+
   Creates a new post.
 
 **URL :**  /posts
@@ -33,7 +33,7 @@
   ----
 
 ##Posts
-----
+
   Returns list of posts.
 
 **URL :**  /posts
@@ -77,9 +77,9 @@
     }
   }
   ```
-
-  ##Nearby Posts
   ----
+  ##Nearby Posts
+  
     Returns list of nearby posts.
 
   **URL :**  /posts/nearby
@@ -125,10 +125,9 @@
     }
     ```
 
-    
+    ----
 
     ##Post Detail
-    ----
       Returns detail of the post.
 
     **URL :**  /posts/:id
