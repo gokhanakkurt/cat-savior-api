@@ -7,8 +7,7 @@
 **Method :** `POST`
   
 **Parameters**
-
-  **Required :**
+* **Required**
    - `title=[string]` (title of the post)
    - `description=[string]` (description of the post)
    - `latitude=[decimal]` (latitude of current location)
@@ -45,10 +44,9 @@
 **Method :** `GET`
   
 **Parameters**
-
-   **Optional :** 
-   - `page=[integer]` (current page number)
-   - `limit=[integer]` (number of posts)
+* **Optional :** 
+     - `page=[integer]` (current page number)
+     - `limit=[integer]` (number of posts)
 
  **Sample URL:**
  
@@ -95,19 +93,18 @@
   **Method :** `GET`
     
   **Parameters**
+  * **Required :** 
+    - `latitude=[decimal]` (latitude of current location)
+    - `longitude=[decimal]` (longitude of current location)
+  * **Optional :** 
+    - `range=[integer]` (range in km)
 
-   **Required :** 
-   - `latitude=[decimal]` (latitude of current location)
-   - `longitude=[decimal]` (longitude of current location)
-   
-   **Optional :** 
-   - `range=[integer]` (range in km)
-   
- **Sample URL:**
+  **Sample URL:**
  
  http://petsavior.gokhanakkurt.com/posts/nearby?latitude=-35.5722080&longitude=-16.8426710&range=100
- 
- **Sample Response:**
+
+  **Sample Response:**
+
 ```json
 {
   "status": true,
@@ -138,15 +135,15 @@
   **Method :** `GET`
     
   **Parameters**
-  
-   **Required :** 
-   - `id=[integer]` (id of the post)
-  
+  * **Required :** 
+    - `id=[integer]` (id of the post)
+ 
   **Sample URL:**
   
   http://petsavior.gokhanakkurt.com/posts/10
 
   **Sample Response:**
+
 ```json
 {
   "status": true,
