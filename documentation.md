@@ -77,21 +77,20 @@
     }
   }
   ```
-  ----
-  
-  ##Nearby Posts
-  
-    Returns list of nearby posts.
 
-  **URL :**  /posts/nearby
+  ##Nearby Posts
+
+    Returns list of posts.
+
+  **URL :**  /posts
 
   **Method :** `GET`
     
   **Parameters**
 
-     **Required :** `latitude=[decimal]` (latitude of current location)
-     **Required :** `longitude=[decimal]` (longitude of current location)
-     **Optional :** `range=[integer]` (range in km)
+    **Required :** `latitude=[decimal]` (latitude of current location)
+    **Required :** `longitude=[decimal]` (longitude of current location)
+    **Optional :** `range=[integer]` (range in km)
 
   **Sample Response:**
 
