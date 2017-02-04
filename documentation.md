@@ -48,7 +48,7 @@
      - `page=[integer]` (current page number)
      - `limit=[integer]` (number of posts)
 
- **Sample URL:**
+**Sample URL:**
  
  http://petsavior.gokhanakkurt.com/posts?page=1&limit=20
  
@@ -86,24 +86,24 @@
 
 ## Nearby Posts
 
-  Returns list of nearby posts.
+Returns list of nearby posts.
 
-  **URL :**  `/posts/nearby`
+**URL :**  `/posts/nearby`
 
-  **Method :** `GET`
+**Method :** `GET`
     
-  **Parameters**
+**Parameters**
   * **Required :** 
     - `latitude=[decimal]` (latitude of current location)
     - `longitude=[decimal]` (longitude of current location)
   * **Optional :** 
     - `range=[integer]` (range in km)
 
-  **Sample URL:**
+**Sample URL:**
  
  http://petsavior.gokhanakkurt.com/posts/nearby?latitude=-35.5722080&longitude=-16.8426710&range=100
 
-  **Sample Response:**
+**Sample Response:**
 
 ```json
 {
@@ -128,21 +128,21 @@
 
 ## Post Detail
 
-  Returns list of nearby posts.
+Returns list of nearby posts.
 
-  **URL :**  `/posts/:id`
+**URL :**  `/posts/:id`
 
-  **Method :** `GET`
+**Method :** `GET`
     
-  **Parameters**
+**Parameters**
   * **Required :** 
     - `id=[integer]` (id of the post)
  
-  **Sample URL:**
+**Sample URL:**
   
   http://petsavior.gokhanakkurt.com/posts/10
 
-  **Sample Response:**
+**Sample Response:**
 
 ```json
 {
