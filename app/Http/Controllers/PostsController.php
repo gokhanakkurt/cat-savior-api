@@ -34,6 +34,14 @@ class PostsController extends ApiController
         FROM (SELECT *, geoDistance(".$input['latitude'].", ".$input['longitude'].", latitude, longitude) as distance FROM post_locations WHERE geoDistance(".$input['latitude'].", ".$input['longitude'].", latitude, longitude) < ".$input['range']." ORDER BY created_at DESC) AS location
         LEFT JOIN posts ON posts.id = location.post_id
         ORDER BY distance");
+
+      $instance = new Image();
+      for ($i=0; $i < sizeof($nearyPosts); $i++) {
+        if (!empty($nearyPosts[$i]->image)){
+          $nearyPosts[$i]->image = $instance->publicUrlPost($nearyPosts[$i]->image);
+        }
+      }
+
       return $this->responseSuccess($nearyPosts);
     }
 
